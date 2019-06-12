@@ -3,7 +3,7 @@ int main()
 {
     int arrmain[8]={4,9,2,5,6,1,8,3};
     int arrsub[8]={800,100,600,300,200,900,700,400};
-    int x,z,t,sum=0;;
+    int s,x,z,t,sum=0,sum1=0;
 
     for(int i = 0; i <= 7-1; i++)
     {
@@ -25,18 +25,19 @@ int main()
     for(int k = 0; k<=7;k++)
     {
          sum = sum + arrmain[k];
+         sum1 = sum1+ arrsub[k];
         if(sum <= 15)
         {
-           t = sum;
-            printf("%d\n",arrmain[k]);
+            t = sum;
+            s = sum1;
+            printf("Product no. %d\n",arrmain[k]);
 
         }
 
     }
-    printf("%d\n",t);
+    printf("Total product no. are %d\n",t);
+    printf("Total product value are %d\n",s);
+    
 
     return 0;
 }
-
-
-
