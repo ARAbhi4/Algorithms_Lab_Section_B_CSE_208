@@ -5,9 +5,9 @@ int main()
     int arrsub[8]={800,100,600,300,200,900,700,400};
     int s,x,z,t,sum=0,sum1=0;
 
-    for(int i = 0; i <= 7-1; i++)
+    for(int i = 0; i <= 6; i++)
     {
-        for(int j=0; j <= 7-1; j++)
+        for(int j=0; j <= 6; j++)
         {
             if(arrsub[j] < arrsub[i+1])
             {
